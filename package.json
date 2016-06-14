@@ -1,13 +1,17 @@
 {
   "name": "babel-plugin-transform-coverage",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "A plugin for Babel 6 that converts the source code to the code with coverage measurement for jscover",
   "main": "lib/transform-coverage.js",
   "scripts": {
     "compile": "babel --presets es2015-loose,stage-1 --plugins transform-runtime demo/ --out-dir app/",
     "compile-cov": "babel --presets es2015-loose,stage-1 --plugins ../../../lib/transform-coverage.js demo/ --out-dir app/",
     "test": "babel --presets es2015-loose,stage-1 --plugins transform-runtime test/ --out-dir test-app/ && mocha test-app/",
     "test-cov": "babel --presets es2015-loose,stage-1 --plugins transform-runtime test/ --out-dir test-app/ && mocha test-app --reporter=mocha-lcov-reporter > test-cov/coverage.lcov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akira-cn/babel-plugin-transform-coverage.git"
   },
   "devDependencies": {
     "babel-cli": "6.x.x",
@@ -27,6 +31,6 @@
     "plugin",
     "transform"
   ],
-  "author": "",
+  "author": "akira-cn",
   "license": "ISC"
 }

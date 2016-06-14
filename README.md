@@ -1,8 +1,8 @@
 # Babel Coverage Plugin
 
-This is a plugin for babel to converts the source codes to the codes with coverage measurement.
+This is a plugin for babel to convert the source codes to the codes with coverage measurement.
 
-Using [mocha](http://mochajs.org/) and [mocha-lcov-reporter](https://github.com/StevenLooman/mocha-lcov-reporter) as well to generate the LCOV report.
+Using [mocha](http://mochajs.org/) and [mocha-lcov-reporter](https://github.com/StevenLooman/mocha-lcov-reporter) to generate the LCOV report.
 
 ## Usage
 
