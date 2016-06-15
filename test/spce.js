@@ -3,6 +3,7 @@
 var expect = require('chai').expect;
 
 let wait = require('../app/wait-promise');
+require('../app/inner/test');
 
 describe('wait-promise', function(){
   describe('normal cases', function(){
